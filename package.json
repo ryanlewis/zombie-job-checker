@@ -1,0 +1,17 @@
+{
+  "name": "contentapi-notify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^3.9.0",
+    "console-stamp": "^0.2.5",
+    "moment": "^2.18.1",
+    "mssql": "^4.0.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "docker:build": "docker build -t ryanlewis/zombie-job-checker .",
+    "docker:export": "mkdir -p tmp/ && docker save -o tmp/zombie-job-checker.tar ryanlewis/zombie-job-checker"
+  }
+}
